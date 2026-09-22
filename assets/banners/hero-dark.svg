@@ -1,115 +1,120 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="1000" height="300" role="img" aria-labelledby="t d">
-    <title id="t">Sai Vardhan Reddy Kasula, Full Stack AI Engineer</title>
-    <desc id="d">Profile banner. On the right, a colorful diagram shows a Java API passing requests to an agent, which calls an LLM, tools and data.</desc>
-    <defs>
-          <linearGradient id="bg" x1="0" y1="0" x2="1000" y2="300" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stop-color="#0B0F1E"/>
-                  <stop offset="55%" stop-color="#160F2E"/>
-                  <stop offset="100%" stop-color="#0B0F1E"/>
-          </linearGradient>
-          <linearGradient id="nameGrad" x1="0" y1="0" x2="620" y2="0" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stop-color="#22D3EE"/>
-                  <stop offset="45%" stop-color="#C084FC"/>
-                  <stop offset="100%" stop-color="#F472B6"/>
-          </linearGradient>
-          <linearGradient id="lineA" x1="0" y1="0" x2="1" y2="0">
-                  <stop offset="0%" stop-color="#60A5FA"/>
-                  <stop offset="100%" stop-color="#A78BFA"/>
-          </linearGradient>
-          <linearGradient id="lineB" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stop-color="#A78BFA"/>
-                  <stop offset="100%" stop-color="#F472B6"/>
-          </linearGradient>
-          <linearGradient id="lineC" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stop-color="#A78BFA"/>
-                  <stop offset="100%" stop-color="#FBBF24"/>
-          </linearGradient>
-          <linearGradient id="lineD" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stop-color="#A78BFA"/>
-                  <stop offset="100%" stop-color="#34D399"/>
-          </linearGradient>
-          <pattern id="grid" width="22" height="22" patternUnits="userSpaceOnUse">
-                  <circle cx="1.5" cy="1.5" r="1" fill="#8B9BC7" opacity="0.16"/>
-          </pattern>
-          <clipPath id="card"><rect width="1000" height="300" rx="20"/></clipPath>
-          <clipPath id="panel"><rect x="606" y="42" width="358" height="216" rx="16"/></clipPath>
-          <style>
-                  .mono{font-family:'SF Mono','Fira Code','JetBrains Mono',Menlo,Consolas,'Liberation Mono',monospace}
-                  .sans{font-family:'Segoe UI','Helvetica Neue',-apple-system,BlinkMacSystemFont,Arial,sans-serif}
-                  .cursor{animation:blink 1.1s steps(1) infinite}
-                  @keyframes blink{50%{fill-opacity:0}}
-                  @media (prefers-reduced-motion:reduce){.cursor{animation:none}}
-          </style>
-    </defs>
+<title id="t">Sai Vardhan Reddy Kasula, Full Stack AI Engineer</title>
+<desc id="d">Profile banner. On the right, a colorful diagram shows a Java API passing requests to an agent, which branches out to an LLM, tools and data.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1000" y2="300" gradientUnits="userSpaceOnUse">
+<stop offset="0%" stop-color="#0B0F1E"/>
+<stop offset="55%" stop-color="#160F2E"/>
+<stop offset="100%" stop-color="#0B0F1E"/>
+</linearGradient>
+<linearGradient id="nameGrad" x1="0" y1="0" x2="620" y2="0" gradientUnits="userSpaceOnUse">
+<stop offset="0%" stop-color="#22D3EE"/>
+<stop offset="45%" stop-color="#C084FC"/>
+<stop offset="100%" stop-color="#F472B6"/>
+</linearGradient>
+<linearGradient id="lineA" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0%" stop-color="#60A5FA"/>
+<stop offset="100%" stop-color="#A78BFA"/>
+</linearGradient>
+<linearGradient id="lineB" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#A78BFA"/>
+<stop offset="100%" stop-color="#F472B6"/>
+</linearGradient>
+<linearGradient id="lineC" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#A78BFA"/>
+<stop offset="100%" stop-color="#FBBF24"/>
+</linearGradient>
+<linearGradient id="lineD" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#A78BFA"/>
+<stop offset="100%" stop-color="#34D399"/>
+</linearGradient>
+<pattern id="grid" width="22" height="22" patternUnits="userSpaceOnUse">
+<circle cx="1.5" cy="1.5" r="1" fill="#8B9BC7" opacity="0.16"/>
+</pattern>
+<clipPath id="card"><rect width="1000" height="300" rx="20"/></clipPath>
+<clipPath id="panel"><rect x="606" y="42" width="358" height="216" rx="16"/></clipPath>
+<style>
+.mono{font-family:'SF Mono','Fira Code','JetBrains Mono',Menlo,Consolas,'Liberation Mono',monospace}
+.sans{font-family:'Segoe UI','Helvetica Neue',-apple-system,BlinkMacSystemFont,Arial,sans-serif}
+.cursor{animation:blink 1.1s steps(1) infinite}
+@keyframes blink{50%{fill-opacity:0}}
+@media (prefers-reduced-motion:reduce){.cursor{animation:none}}
+</style>
+</defs>
 
-    <g clip-path="url(#card)">
-          <rect width="1000" height="300" fill="url(#bg)"/>
-          <rect width="1000" height="300" fill="url(#grid)"/>
-    </g>
-    <rect x="0.5" y="0.5" width="999" height="299" rx="20" fill="none" stroke="#33406B"/>
+<g clip-path="url(#card)">
+<rect width="1000" height="300" fill="url(#bg)"/>
+<rect width="1000" height="300" fill="url(#grid)"/>
+</g>
+<rect x="0.5" y="0.5" width="999" height="299" rx="20" fill="none" stroke="#33406B"/>
 
-    <!-- top accent bar: rainbow -->
-    <rect x="20" y="0" width="960" height="3" fill="#22D3EE"/>
-    <rect x="20" y="0" width="960" height="3" fill="url(#nameGrad)" opacity="0.9"/>
+<!-- top accent bar: rainbow -->
+<rect x="20" y="0" width="960" height="3" fill="#22D3EE"/>
+<rect x="20" y="0" width="960" height="3" fill="url(#nameGrad)" opacity="0.9"/>
 
-    <!-- left: identity -->
-    <text x="56" y="60" class="mono" font-size="14" fill="#22D3EE">~/sai-vardhan <tspan fill="#8B9BC7">$</tspan><tspan fill="#F8FAFC"> whoami</tspan><tspan class="cursor" fill="#F472B6"> ▌</tspan></text>
+<!-- left: identity -->
+<text x="56" y="60" class="mono" font-size="14" fill="#22D3EE">~/sai-vardhan <tspan fill="#8B9BC7">$</tspan><tspan fill="#F8FAFC"> whoami</tspan><tspan class="cursor" fill="#F472B6"> ▌</tspan></text>
 
-    <text x="54" y="136" class="sans" font-size="46" font-weight="800" letter-spacing="-1" fill="url(#nameGrad)">Sai Vardhan Reddy K</text>
-    <text x="56" y="178" class="sans" font-size="25" font-weight="700" fill="#FBBF24">Full Stack AI Engineer</text>
-    <text x="56" y="210" class="sans" font-size="15" fill="#AEB9DD">Java backends, AI agents, and the integrations between them.</text>
+<text x="54" y="136" class="sans" font-size="46" font-weight="800" letter-spacing="-1" fill="url(#nameGrad)">Sai Vardhan Reddy K</text>
+<text x="56" y="178" class="sans" font-size="25" font-weight="700" fill="#FBBF24">Full Stack AI Engineer</text>
+<text x="56" y="210" class="sans" font-size="15" fill="#AEB9DD">Java backends, AI agents, and the integrations between them.</text>
 
-    <g class="mono" font-size="12.5" text-anchor="middle" font-weight="600">
-          <rect x="56" y="234" width="58" height="27" rx="13.5" fill="#60A5FA" fill-opacity="0.14" stroke="#60A5FA" stroke-opacity="0.8"/>
-          <text x="85" y="251.5" fill="#93C5FD">Java</text>
+<g class="mono" font-size="12.5" text-anchor="middle" font-weight="600">
+<rect x="56" y="234" width="58" height="27" rx="13.5" fill="#60A5FA" fill-opacity="0.14" stroke="#60A5FA" stroke-opacity="0.8"/>
+<text x="85" y="251.5" fill="#93C5FD">Java</text>
 
-          <rect x="124" y="234" width="90" height="27" rx="13.5" fill="#A78BFA" fill-opacity="0.14" stroke="#A78BFA" stroke-opacity="0.8"/>
-          <text x="169" y="251.5" fill="#C4B5FD">AI Agents</text>
+<rect x="124" y="234" width="90" height="27" rx="13.5" fill="#A78BFA" fill-opacity="0.14" stroke="#A78BFA" stroke-opacity="0.8"/>
+<text x="169" y="251.5" fill="#C4B5FD">AI Agents</text>
 
-          <rect x="224" y="234" width="70" height="27" rx="13.5" fill="#34D399" fill-opacity="0.14" stroke="#34D399" stroke-opacity="0.8"/>
-          <text x="259" y="251.5" fill="#6EE7B7">Cloud</text>
+<rect x="224" y="234" width="70" height="27" rx="13.5" fill="#34D399" fill-opacity="0.14" stroke="#34D399" stroke-opacity="0.8"/>
+<text x="259" y="251.5" fill="#6EE7B7">Cloud</text>
 
-          <rect x="304" y="234" width="106" height="27" rx="13.5" fill="#F472B6" fill-opacity="0.14" stroke="#F472B6" stroke-opacity="0.8"/>
-          <text x="357" y="251.5" fill="#F9A8D4">Modernization</text>
-    </g>
+<rect x="304" y="234" width="106" height="27" rx="13.5" fill="#F472B6" fill-opacity="0.14" stroke="#F472B6" stroke-opacity="0.8"/>
+<text x="357" y="251.5" fill="#F9A8D4">Modernization</text>
+</g>
 
-    <!-- right: colorful architecture panel -->
-    <rect x="606" y="42" width="358" height="216" rx="16" fill="#0F1530" fill-opacity="0.7" stroke="#33406B"/>
-    <text x="628" y="70" class="mono" font-size="11.5" fill="#8B9BC7" letter-spacing="0.5">REQUEST FLOW</text>
+<!-- right: colorful architecture panel (old fan-out layout, new colors, live flow) -->
+<rect x="606" y="42" width="358" height="216" rx="16" fill="#0F1530" fill-opacity="0.7" stroke="#33406B"/>
+<text x="628" y="70" class="mono" font-size="11.5" fill="#8B9BC7" letter-spacing="0.5">REQUEST FLOW</text>
 
-    <g clip-path="url(#panel)">
-          <!-- Java API node -->
-          <rect x="628" y="86" width="140" height="40" rx="10" fill="#1E293B" stroke="#60A5FA" stroke-width="1.4"/>
-          <circle cx="644" cy="106" r="4" fill="#60A5FA"/>
-          <text x="656" y="110" class="mono" font-size="12.5" fill="#93C5FD">Java API</text>
+<g clip-path="url(#panel)">
+<!-- connecting lines -->
+<path d="M732 153 H752" stroke="url(#lineA)" stroke-width="2" fill="none"/>
+<path d="M752 153 l-6 -4 v8 z" fill="#A78BFA"/>
 
-          <!-- arrow to Agent -->
-          <path d="M768 106 H794" stroke="url(#lineA)" stroke-width="2" fill="none"/>
-          <path d="M794 106 l-6 -4 v8 z" fill="#A78BFA"/>
+<path d="M856 153 C866 153 866 100 876 100" stroke="url(#lineB)" stroke-width="1.8" fill="none"/>
+<path d="M856 153 H876" stroke="url(#lineC)" stroke-width="1.8" fill="none"/>
+<path d="M856 153 C866 153 866 206 876 206" stroke="url(#lineD)" stroke-width="1.8" fill="none"/>
 
-          <!-- Agent node -->
-          <rect x="800" y="86" width="140" height="40" rx="10" fill="#1E293B" stroke="#A78BFA" stroke-width="1.4"/>
-          <circle cx="816" cy="106" r="4" fill="#A78BFA"/>
-          <text x="828" y="110" class="mono" font-size="12.5" fill="#C4B5FD">Agent</text>
+<!-- Java API node -->
+<rect x="628" y="133" width="104" height="40" rx="10" fill="#1E293B" stroke="#60A5FA" stroke-width="1.4"/>
+<circle cx="644" cy="153" r="4" fill="#60A5FA"/>
+<text x="656" y="157" class="mono" font-size="12.5" fill="#93C5FD">Java API</text>
 
-          <!-- three branches down from Agent center (870,126) -->
-          <path d="M870 126 V150 H676 V178" stroke="url(#lineB)" stroke-width="1.8" fill="none"/>
-          <path d="M870 126 V150 H788 V178" stroke="url(#lineC)" stroke-width="1.8" fill="none"/>
-          <path d="M870 126 V150 H900 V178" stroke="url(#lineD)" stroke-width="1.8" fill="none"/>
+<!-- Agent node -->
+<rect x="752" y="133" width="104" height="40" rx="10" fill="#1E293B" stroke="#A78BFA" stroke-width="1.4"/>
+<circle cx="768" cy="153" r="4" fill="#A78BFA"/>
+<text x="780" y="157" class="mono" font-size="12.5" fill="#C4B5FD">Agent</text>
 
-          <!-- LLM node -->
-          <rect x="628" y="178" width="96" height="40" rx="10" fill="#1E293B" stroke="#F472B6" stroke-width="1.4"/>
-          <circle cx="642" cy="198" r="4" fill="#F472B6"/>
-          <text x="654" y="202" class="mono" font-size="12.5" fill="#F9A8D4">LLM</text>
+<!-- LLM node -->
+<rect x="876" y="80" width="70" height="40" rx="10" fill="#1E293B" stroke="#F472B6" stroke-width="1.4"/>
+<circle cx="890" cy="100" r="4" fill="#F472B6"/>
+<text x="902" y="104" class="mono" font-size="12.5" fill="#F9A8D4">LLM</text>
 
-          <!-- Tools node -->
-          <rect x="740" y="178" width="96" height="40" rx="10" fill="#1E293B" stroke="#FBBF24" stroke-width="1.4"/>
-          <circle cx="754" cy="198" r="4" fill="#FBBF24"/>
-          <text x="766" y="202" class="mono" font-size="12.5" fill="#FDE68A">Tools</text>
+<!-- Tools node -->
+<rect x="876" y="133" width="70" height="40" rx="10" fill="#1E293B" stroke="#FBBF24" stroke-width="1.4"/>
+<circle cx="890" cy="153" r="4" fill="#FBBF24"/>
+<text x="902" y="157" class="mono" font-size="12.5" fill="#FDE68A">Tools</text>
 
-          <!-- Data node -->
-          <rect x="852" y="178" width="96" height="40" rx="10" fill="#1E293B" stroke="#34D399" stroke-width="1.4"/>
-          <circle cx="866" cy="198" r="4" fill="#34D399"/>
-          <text x="878" y="202" class="mono" font-size="12.5" fill="#6EE7B7">Data</text>
-    </g>
+<!-- Data node -->
+<rect x="876" y="186" width="70" height="40" rx="10" fill="#1E293B" stroke="#34D399" stroke-width="1.4"/>
+<circle cx="890" cy="206" r="4" fill="#34D399"/>
+<text x="902" y="210" class="mono" font-size="12.5" fill="#6EE7B7">Data</text>
+
+<!-- live flow: a request travelling API -> agent -> tools -->
+<circle r="3.4" fill="#60A5FA"><animateMotion dur="1.6s" repeatCount="indefinite" path="M732 153 H752"/></circle>
+<circle r="3.4" fill="#A78BFA"><animateMotion dur="1.6s" begin="0.8s" repeatCount="indefinite" path="M856 153 C866 153 866 100 876 100"/></circle>
+<circle r="3.4" fill="#A78BFA"><animateMotion dur="1.6s" begin="0.8s" repeatCount="indefinite" path="M856 153 H876"/></circle>
+<circle r="3.4" fill="#A78BFA"><animateMotion dur="1.6s" begin="0.8s" repeatCount="indefinite" path="M856 153 C866 153 866 206 876 206"/></circle>
+</g>
 </svg>
