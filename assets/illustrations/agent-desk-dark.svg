@@ -1,183 +1,278 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560">
-  <defs>
-    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0b1222"/>
-      <stop offset="55%" stop-color="#121a33"/>
-      <stop offset="100%" stop-color="#171f3d"/>
-    </linearGradient>
-    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#1a2140"/>
-      <stop offset="100%" stop-color="#10152a"/>
-    </linearGradient>
-    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0e2f3a"/>
-      <stop offset="100%" stop-color="#0a1a2c"/>
-    </linearGradient>
-    <linearGradient id="deskTop" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#3a2c22"/>
-      <stop offset="100%" stop-color="#2b2018"/>
-    </linearGradient>
-    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#5eead4" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#5eead4" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="moon" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#fef3c7" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#fef3c7" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" role="img" aria-label="Animated illustration of Sai at a night workstation building a multi-agent AI workflow, with a city skyline outside the window">
+<style>
+  .cloud{animation:drift 70s linear infinite;}
+  .cloud.c2{animation-duration:95s;animation-delay:-20s;}
+  @keyframes drift{from{transform:translateX(-40px);}to{transform:translateX(60px);}}
+  .moon-glow{animation:pulseSoft 6s ease-in-out infinite;}
+  @keyframes pulseSoft{0%,100%{opacity:.85;}50%{opacity:1;}}
+  .win-lit{animation:winBlink 5s ease-in-out infinite;}
+  @keyframes winBlink{0%,40%,100%{opacity:.55;}45%,55%{opacity:.12;}}
+  .steam{animation:steamRise 3.6s ease-in-out infinite;transform-origin:bottom center;}
+  @keyframes steamRise{0%{opacity:0;transform:translateY(0) scaleY(.6);}30%{opacity:.55;}100%{opacity:0;transform:translateY(-14px) scaleY(1.15);}}
+  .fan-blades{animation:spin 4s linear infinite;transform-origin:center;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+  .led{animation:ledBlink 2.4s ease-in-out infinite;}
+  @keyframes ledBlink{0%,100%{opacity:.25;}50%{opacity:1;}}
+  .rgb-strip{animation:rgbShift 6s ease-in-out infinite;}
+  @keyframes rgbShift{0%,100%{stop-color:#5eead4;}33%{stop-color:#a78bfa;}66%{stop-color:#fb923c;}}
+  .agent-node{animation:nodePulse 3.2s ease-in-out infinite;}
+  @keyframes nodePulse{0%,100%{opacity:.65;r:var(--r,5);}50%{opacity:1;r:calc(var(--r,5) * 1.25);}}
+  .agent-particle{animation:travel 2.4s linear infinite;offset-rotate:0deg;}
+  @keyframes travel{0%{offset-distance:0%;opacity:0;}8%{opacity:1;}92%{opacity:1;}100%{offset-distance:100%;opacity:0;}}
+  .code-scroll{animation:codeScroll 9s linear infinite;}
+  @keyframes codeScroll{0%{transform:translateY(0);}100%{transform:translateY(-64px);}}
+  .cursor-move{animation:cursorMove 6s ease-in-out infinite;}
+  @keyframes cursorMove{0%,100%{transform:translate(0,0);}25%{transform:translate(70px,10px);}50%{transform:translate(30px,34px);}75%{transform:translate(90px,4px);}}
+  .monitor-glow{animation:pulseSoft 5s ease-in-out infinite;}
+  .status-cycle{animation:statusCycle 9s ease-in-out infinite;}
+  @keyframes statusCycle{0%{opacity:0;}4%{opacity:1;}30%{opacity:1;}34%{opacity:0;}100%{opacity:0;}}
+</style>
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#080b16"/><stop offset="55%" stop-color="#101731"/><stop offset="100%" stop-color="#161f3f"/>
+  </linearGradient>
+  <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#161d38"/><stop offset="100%" stop-color="#0a0e1e"/>
+  </linearGradient>
+  <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#0e2f3a"/><stop offset="100%" stop-color="#0a1a2c"/>
+  </linearGradient>
+  <linearGradient id="deskTop" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#3a2c22"/><stop offset="100%" stop-color="#2b2018"/>
+  </linearGradient>
+  <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#5eead4" stop-opacity="0.5"/><stop offset="100%" stop-color="#5eead4" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="moon" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#fef3c7" stop-opacity="0.9"/><stop offset="100%" stop-color="#fef3c7" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="rgbLine" x1="0" y1="0" x2="0" y2="1">
+    <stop class="rgb-strip" offset="0%" stop-color="#5eead4"/><stop offset="100%" stop-color="#a78bfa"/>
+  </linearGradient>
+</defs>
 
-  <rect x="0" y="0" width="900" height="560" fill="url(#sky)"/>
+<rect x="0" y="0" width="1200" height="410" fill="url(#sky)"/>
+<circle class="moon-glow" cx="1040" cy="90" r="58" fill="url(#moon)"/>
+<circle cx="1040" cy="90" r="20" fill="#fef9e7" opacity="0.9"/>
+<g opacity="0.75" fill="#cbd5e1">
+  <circle cx="120" cy="60" r="1.5"/><circle cx="220" cy="100" r="1.2"/><circle cx="330" cy="50" r="1.6"/>
+  <circle cx="60" cy="140" r="1.1"/><circle cx="430" cy="75" r="1.3"/><circle cx="560" cy="40" r="1.2"/>
+  <circle cx="700" cy="120" r="1.3"/><circle cx="900" cy="55" r="1.4"/><circle cx="960" cy="150" r="1.2"/>
+</g>
+<ellipse class="cloud" cx="220" cy="90" rx="70" ry="14" fill="#a9b6d9" opacity="0.10"/>
+<ellipse class="cloud c2" cx="640" cy="60" rx="90" ry="16" fill="#a9b6d9" opacity="0.08"/>
 
-  <circle cx="770" cy="90" r="60" fill="url(#moon)"/>
-  <circle cx="770" cy="90" r="22" fill="#fef9e7" opacity="0.85"/>
-
-  <g opacity="0.7">
-    <circle cx="120" cy="70" r="1.6" fill="#cbd5e1"/>
-    <circle cx="200" cy="110" r="1.3" fill="#cbd5e1"/>
-    <circle cx="300" cy="55" r="1.8" fill="#cbd5e1"/>
-    <circle cx="60" cy="150" r="1.2" fill="#cbd5e1"/>
-    <circle cx="400" cy="80" r="1.4" fill="#cbd5e1"/>
-    <circle cx="500" cy="45" r="1.3" fill="#cbd5e1"/>
-    <circle cx="650" cy="130" r="1.4" fill="#cbd5e1"/>
-    <circle cx="850" cy="60" r="1.5" fill="#cbd5e1"/>
+<g opacity="0.9">
+  <rect x="0" y="240" width="50" height="150" fill="#0c1224"/>
+  <rect x="55" y="200" width="36" height="190" fill="#0f1630"/>
+  <rect x="96" y="260" width="55" height="130" fill="#0c1224"/>
+  <rect x="1000" y="215" width="42" height="175" fill="#0f1630"/>
+  <rect x="1048" y="250" width="52" height="140" fill="#0c1224"/>
+  <rect x="1105" y="195" width="46" height="195" fill="#0f1630"/>
+  <rect x="1155" y="255" width="40" height="135" fill="#0c1224"/>
+  <g fill="#5eead4">
+    <rect class="win-lit" x="10" y="255" width="6" height="7" style="animation-delay:.2s"/>
+    <rect class="win-lit" x="24" y="255" width="6" height="7" style="animation-delay:1.1s"/>
+    <rect class="win-lit" x="10" y="275" width="6" height="7" style="animation-delay:2s"/>
+    <rect class="win-lit" x="38" y="275" width="6" height="7" style="animation-delay:.6s"/>
+    <rect class="win-lit" x="65" y="215" width="6" height="7" style="animation-delay:1.6s"/>
+    <rect class="win-lit" x="78" y="235" width="6" height="7" style="animation-delay:.9s"/>
+    <rect class="win-lit" x="1012" y="230" width="6" height="7" style="animation-delay:.4s"/>
+    <rect class="win-lit" x="1026" y="250" width="6" height="7" style="animation-delay:1.4s"/>
+    <rect class="win-lit" x="1115" y="215" width="6" height="7" style="animation-delay:1.9s"/>
+    <rect class="win-lit" x="1130" y="240" width="6" height="7" style="animation-delay:.7s"/>
+    <rect class="win-lit" x="1165" y="270" width="6" height="7" style="animation-delay:1.2s"/>
   </g>
+</g>
+<g opacity="0.35" fill="#0d1428">
+  <rect x="160" y="300" width="30" height="90"/><rect x="200" y="270" width="26" height="120"/>
+  <rect x="235" y="310" width="34" height="80"/><rect x="820" y="290" width="30" height="100"/>
+  <rect x="860" y="260" width="28" height="130"/><rect x="900" y="305" width="34" height="85"/>
+</g>
 
-  <!-- city skyline -->
-  <g opacity="0.85">
-    <rect x="0" y="230" width="55" height="160" fill="#0d1326"/>
-    <rect x="60" y="190" width="40" height="200" fill="#101733"/>
-    <rect x="105" y="250" width="60" height="140" fill="#0d1326"/>
-    <rect x="720" y="210" width="45" height="180" fill="#101733"/>
-    <rect x="770" y="245" width="55" height="145" fill="#0d1326"/>
-    <rect x="830" y="200" width="50" height="190" fill="#101733"/>
-    <!-- windows -->
-    <g fill="#5eead4" opacity="0.55">
-      <rect x="10" y="245" width="6" height="8"/><rect x="24" y="245" width="6" height="8"/><rect x="38" y="245" width="6" height="8"/>
-      <rect x="10" y="265" width="6" height="8"/><rect x="38" y="265" width="6" height="8"/>
-      <rect x="10" y="300" width="6" height="8"/><rect x="24" y="300" width="6" height="8"/>
-      <rect x="70" y="210" width="6" height="8"/><rect x="84" y="210" width="6" height="8"/>
-      <rect x="70" y="235" width="6" height="8"/><rect x="84" y="235" width="6" height="8"/>
-      <rect x="735" y="230" width="6" height="8"/><rect x="748" y="230" width="6" height="8"/>
-      <rect x="840" y="220" width="6" height="8"/><rect x="854" y="220" width="6" height="8"/>
-      <rect x="840" y="245" width="6" height="8"/><rect x="854" y="245" width="6" height="8"/>
-    </g>
-  </g>
+<rect x="0" y="405" width="1200" height="235" fill="url(#floor)"/>
+<rect x="0" y="403" width="1200" height="4" fill="#5eead4" opacity="0.22"/>
 
-  <!-- room floor -->
-  <rect x="0" y="390" width="900" height="170" fill="url(#floor)"/>
-  <rect x="0" y="388" width="900" height="4" fill="#5eead4" opacity="0.25"/>
-
-  <!-- window frame behind desk -->
-  <rect x="30" y="60" width="840" height="330" fill="none"/>
-
-  <!-- plant left -->
-  <g transform="translate(70,330)">
-    <rect x="-18" y="40" width="36" height="34" rx="4" fill="#22304f"/>
-    <path d="M0 40 C -22 20 -26 -10 -8 -28 C -4 -6 0 10 0 40" fill="#2f9e6e"/>
-    <path d="M0 40 C 20 24 26 -4 10 -24 C 6 -4 2 10 0 40" fill="#38b57f"/>
-    <path d="M0 40 C -6 14 -2 -8 2 -30 C 8 -10 6 14 0 40" fill="#4ecb92"/>
-  </g>
-
-  <!-- desk -->
-  <rect x="210" y="405" width="480" height="18" rx="4" fill="url(#deskTop)"/>
-  <rect x="230" y="423" width="14" height="85" fill="#22180f"/>
-  <rect x="646" y="423" width="14" height="85" fill="#22180f"/>
-
-  <!-- monitor arm + main screen -->
-  <rect x="418" y="392" width="10" height="18" fill="#1c2740"/>
+<g transform="translate(30,430)">
+  <rect x="0" y="0" width="130" height="118" rx="3" fill="#141b33" stroke="#232c50" stroke-width="1.5"/>
+  <line x1="0" y1="39" x2="130" y2="39" stroke="#232c50" stroke-width="1.5"/>
+  <line x1="0" y1="78" x2="130" y2="78" stroke="#232c50" stroke-width="1.5"/>
   <g>
-    <rect x="330" y="235" width="196" height="158" rx="10" fill="#060c18" stroke="#5eead4" stroke-opacity="0.4" stroke-width="2"/>
-    <rect x="342" y="247" width="172" height="134" rx="4" fill="url(#screen)"/>
-    <circle cx="810" cy="0" r="0"/>
-    <!-- agent graph on screen -->
-    <g stroke="#5eead4" stroke-width="1.4" opacity="0.85">
-      <line x1="375" y1="270" x2="420" y2="300"/>
-      <line x1="420" y1="300" x2="470" y2="270"/>
-      <line x1="420" y1="300" x2="410" y2="345"/>
-      <line x1="410" y1="345" x2="465" y2="360"/>
-      <line x1="420" y1="300" x2="480" y2="330"/>
+    <rect x="8" y="8" width="9" height="28" fill="#f472b6" opacity=".8"/><rect x="19" y="10" width="9" height="26" fill="#5eead4" opacity=".75"/>
+    <rect x="30" y="6" width="9" height="30" fill="#fbbf24" opacity=".75"/><rect x="41" y="12" width="9" height="24" fill="#a78bfa" opacity=".75"/>
+    <rect x="55" y="9" width="9" height="27" fill="#60a5fa" opacity=".75"/><rect x="66" y="7" width="9" height="29" fill="#fb923c" opacity=".7"/>
+  </g>
+  <g>
+    <rect x="10" y="47" width="9" height="28" fill="#a78bfa" opacity=".75"/><rect x="21" y="49" width="9" height="26" fill="#fb923c" opacity=".7"/>
+    <rect x="40" y="45" width="9" height="30" fill="#5eead4" opacity=".75"/><rect x="60" y="48" width="9" height="27" fill="#f472b6" opacity=".75"/>
+  </g>
+  <path d="M92 46h30v30H92zM107 46v30" fill="none" stroke="#8d99bd" stroke-width="1.5" opacity=".6"/>
+</g>
+
+<g transform="translate(172,468)">
+  <rect x="0" y="0" width="66" height="80" rx="4" fill="#0c1122" stroke="#232c50" stroke-width="1.5"/>
+  <g fill="#5eead4">
+    <circle class="led" cx="12" cy="12" r="2.2" style="animation-delay:.1s"/>
+    <circle class="led" cx="22" cy="12" r="2.2" style="animation-delay:.9s"/>
+    <circle class="led" cx="32" cy="12" r="2.2" style="animation-delay:1.6s"/>
+    <circle class="led" cx="12" cy="26" r="2.2" style="animation-delay:.5s"/>
+    <circle class="led" cx="22" cy="26" r="2.2" style="animation-delay:1.3s"/>
+    <circle class="led" cx="32" cy="26" r="2.2" style="animation-delay:2s"/>
+  </g>
+  <line x1="8" y1="40" x2="58" y2="40" stroke="#232c50" stroke-width="1.4"/>
+  <line x1="8" y1="52" x2="58" y2="52" stroke="#232c50" stroke-width="1.4"/>
+  <line x1="8" y1="64" x2="58" y2="64" stroke="#232c50" stroke-width="1.4"/>
+  <circle class="led" cx="50" cy="70" r="2" fill="#fb923c" style="animation-delay:.3s"/>
+</g>
+
+<g transform="translate(90,398)">
+  <path d="M0 40 C -20 20 -24 -8 -8 -26 C -4 -6 0 8 0 40" fill="#2f9e6e"/>
+  <path d="M0 40 C 18 22 24 -4 10 -22 C 6 -4 2 8 0 40" fill="#38b57f"/>
+  <path d="M0 40 C -5 14 -2 -6 2 -28 C 7 -8 5 12 0 40" fill="#4ecb92"/>
+</g>
+
+<g transform="translate(1045,470)">
+  <rect x="0" y="0" width="66" height="130" rx="6" fill="#0d1326" stroke="#232c50" stroke-width="1.5"/>
+  <rect x="6" y="8" width="4" height="114" fill="url(#rgbLine)" opacity=".8"/>
+  <circle cx="33" cy="46" r="17" fill="#0a0f1f" stroke="#2c3760" stroke-width="1.4"/>
+  <g class="fan-blades" style="transform-origin:33px 46px;">
+    <path d="M33 46 L33 32 M33 46 L45 53 M33 46 L21 53" stroke="#5eead4" stroke-width="2.2" stroke-linecap="round" opacity=".8"/>
+  </g>
+  <circle cx="33" cy="46" r="3" fill="#5eead4"/>
+  <circle cx="33" cy="90" r="12" fill="#0a0f1f" stroke="#2c3760" stroke-width="1.2"/>
+  <rect x="20" y="106" width="26" height="4" rx="2" fill="#232c50"/>
+</g>
+
+<rect x="300" y="455" width="700" height="18" rx="4" fill="url(#deskTop)"/>
+<rect x="322" y="473" width="14" height="78" fill="#22180f"/>
+<rect x="964" y="473" width="14" height="78" fill="#22180f"/>
+<rect x="644" y="442" width="10" height="16" fill="#1c2740"/>
+
+<g>
+  <rect x="398" y="222" width="504" height="230" rx="12" fill="#060c18" stroke="#5eead4" stroke-opacity="0.45" stroke-width="2"/>
+  <circle class="monitor-glow" cx="650" cy="337" r="190" fill="url(#glow)"/>
+
+  <rect x="412" y="236" width="248" height="202" rx="6" fill="url(#screen)"/>
+  <text x="422" y="252" font-family="monospace" font-size="8" fill="#5eead4" opacity=".8">AGENT WORKFLOW</text>
+  <g stroke="#2c5f66" stroke-width="1.2" fill="none">
+    <line x1="536" y1="262" x2="536" y2="280"/><line x1="536" y1="298" x2="536" y2="316"/>
+    <line x1="536" y1="334" x2="536" y2="352"/><line x1="536" y1="370" x2="536" y2="388"/>
+    <line x1="536" y1="406" x2="536" y2="418"/>
+  </g>
+  <g stroke="#5eead4" stroke-width="1.6" fill="none" opacity=".55" stroke-dasharray="4 4">
+    <line x1="536" y1="262" x2="536" y2="280"/><line x1="536" y1="298" x2="536" y2="316"/>
+    <line x1="536" y1="334" x2="536" y2="352"/><line x1="536" y1="370" x2="536" y2="388"/>
+    <line x1="536" y1="406" x2="536" y2="418"/>
+  </g>
+  <circle class="agent-particle" r="2.6" fill="#a7f3ec" style="offset-path:path('M536 262 L536 418');animation-delay:0s"/>
+  <circle class="agent-particle" r="2.6" fill="#a7f3ec" style="offset-path:path('M536 262 L536 418');animation-delay:1.2s"/>
+
+  <g font-family="monospace" font-size="7.5" fill="#cfe9ea">
+    <g><rect x="486" y="256" width="100" height="15" rx="7" fill="#0c2126" stroke="#3a6a6f" stroke-width="1"/>
+      <circle class="agent-node" style="--r:3" cx="497" cy="263.5" r="3" fill="#5eead4"/><text x="506" y="266.5">USER REQUEST</text></g>
+    <g><rect x="486" y="292" width="100" height="15" rx="7" fill="#0c2126" stroke="#3a6a6f" stroke-width="1"/>
+      <circle class="agent-node" style="--r:3;animation-delay:.3s" cx="497" cy="299.5" r="3" fill="#93c5fd"/><text x="506" y="302.5">PLANNER AGENT</text></g>
+    <g><rect x="486" y="328" width="100" height="15" rx="7" fill="#0c2126" stroke="#3a6a6f" stroke-width="1"/>
+      <circle class="agent-node" style="--r:3;animation-delay:.6s" cx="497" cy="335.5" r="3" fill="#f0abfc"/><text x="506" y="338.5">RAG / VECTOR DB</text></g>
+    <g><rect x="486" y="364" width="100" height="15" rx="7" fill="#0c2126" stroke="#3a6a6f" stroke-width="1"/>
+      <circle class="agent-node" style="--r:3;animation-delay:.9s" cx="497" cy="371.5" r="3" fill="#fbbf24"/><text x="506" y="374.5">LLM REASONING</text></g>
+    <g><rect x="486" y="400" width="100" height="15" rx="7" fill="#0c2126" stroke="#3a6a6f" stroke-width="1"/>
+      <circle class="agent-node" style="--r:3;animation-delay:1.2s" cx="497" cy="407.5" r="3" fill="#4ade80"/><text x="506" y="410.5">VALIDATED RESPONSE</text></g>
+  </g>
+  <g font-family="monospace" font-size="6.5" fill="#6fb0b4" opacity=".85">
+    <text x="596" y="266">tools/api</text><text x="596" y="302">chroma·k=6</text><text x="596" y="338">claude-4</text>
+  </g>
+
+  <rect x="668" y="236" width="222" height="96" rx="6" fill="url(#screen)"/>
+  <text x="678" y="250" font-family="monospace" font-size="8" fill="#93c5fd" opacity=".8">agent_service.py</text>
+  <clipPath id="codeClip"><rect x="678" y="256" width="200" height="70"/></clipPath>
+  <g clip-path="url(#codeClip)">
+    <g class="code-scroll">
+      <g font-family="monospace" font-size="6.5" fill="#8fb8ba">
+        <rect x="678" y="257" width="46" height="5" rx="1.5" fill="#7dd3c0" opacity=".7"/>
+        <rect x="728" y="257" width="70" height="5" rx="1.5" fill="#93c5fd" opacity=".6"/>
+        <rect x="686" y="267" width="90" height="5" rx="1.5" fill="#6b7aa8" opacity=".6"/>
+        <rect x="686" y="277" width="60" height="5" rx="1.5" fill="#f0abfc" opacity=".55"/>
+        <rect x="678" y="287" width="40" height="5" rx="1.5" fill="#7dd3c0" opacity=".7"/>
+        <rect x="722" y="287" width="80" height="5" rx="1.5" fill="#8fb8ba" opacity=".5"/>
+        <rect x="686" y="297" width="100" height="5" rx="1.5" fill="#6b7aa8" opacity=".6"/>
+        <rect x="678" y="307" width="34" height="5" rx="1.5" fill="#fbbf24" opacity=".6"/>
+        <rect x="678" y="321" width="46" height="5" rx="1.5" fill="#7dd3c0" opacity=".7"/>
+        <rect x="728" y="321" width="70" height="5" rx="1.5" fill="#93c5fd" opacity=".6"/>
+        <rect x="686" y="331" width="90" height="5" rx="1.5" fill="#6b7aa8" opacity=".6"/>
+        <rect x="686" y="341" width="60" height="5" rx="1.5" fill="#f0abfc" opacity=".55"/>
+      </g>
     </g>
-    <g fill="#5eead4">
-      <circle cx="375" cy="270" r="5"/>
-      <circle cx="420" cy="300" r="7"/>
-      <circle cx="470" cy="270" r="5"/>
-      <circle cx="410" cy="345" r="5"/>
-      <circle cx="465" cy="360" r="4.5"/>
-      <circle cx="480" cy="330" r="4.5"/>
-    </g>
-    <g fill="#93c5fd" opacity="0.9">
-      <rect x="352" y="256" width="46" height="4" rx="2"/>
-      <rect x="352" y="265" width="30" height="4" rx="2"/>
-    </g>
   </g>
-  <rect x="313" y="393" width="230" height="8" rx="3" fill="#0a1220"/>
+  <g class="cursor-move"><rect x="740" y="270" width="1.4" height="7" fill="#e2f6f2"/></g>
 
-  <!-- second small monitor, right, chat/agent panel -->
-  <g transform="translate(552,270)">
-    <rect x="0" y="0" width="120" height="100" rx="8" fill="#060c18" stroke="#5eead4" stroke-opacity="0.3" stroke-width="2"/>
-    <rect x="10" y="10" width="100" height="80" rx="4" fill="url(#screen)"/>
-    <rect x="18" y="20" width="55" height="10" rx="5" fill="#1c3a3e"/>
-    <rect x="47" y="36" width="55" height="10" rx="5" fill="#134e4a" opacity="0.9"/>
-    <rect x="18" y="52" width="40" height="10" rx="5" fill="#1c3a3e"/>
-    <circle cx="90" cy="68" r="9" fill="#5eead4" opacity="0.85"/>
-    <rect x="45" y="100" width="30" height="8" fill="#0a1220"/>
+  <rect x="668" y="342" width="222" height="96" rx="6" fill="#060c18" stroke="#1d2b45" stroke-width="1"/>
+  <circle cx="678" cy="350" r="2" fill="#fb7185"/><circle cx="686" cy="350" r="2" fill="#fbbf24"/><circle cx="694" cy="350" r="2" fill="#4ade80"/>
+  <g font-family="monospace" font-size="7" fill="#7dd3c0">
+    <text x="678" y="364">$ pytest ./agents -q</text>
+    <text x="678" y="376" fill="#8fb8ba">12 passed in 2.1s</text>
+    <text x="678" y="388">$ docker build -t agent-svc .</text>
   </g>
+  <g font-family="monospace" font-size="7.5" font-weight="700">
+    <g class="status-cycle" style="animation-delay:0s"><rect x="668" y="412" width="80" height="16" rx="8" fill="#3a2c0e"/><text x="678" y="423.5" fill="#fbbf24">BUILDING</text></g>
+    <g class="status-cycle" style="animation-delay:-3s"><rect x="668" y="412" width="80" height="16" rx="8" fill="#12233d"/><text x="678" y="423.5" fill="#93c5fd">TESTING</text></g>
+    <g class="status-cycle" style="animation-delay:-6s"><rect x="668" y="412" width="86" height="16" rx="8" fill="#0f2e1c"/><text x="678" y="423.5" fill="#4ade80">DEPLOYED ✔</text></g>
+  </g>
+</g>
 
-  <!-- glow behind main screen -->
-  <circle cx="428" cy="310" r="150" fill="url(#glow)"/>
+<g transform="translate(918,258)">
+  <rect x="0" y="0" width="112" height="172" rx="8" fill="#060c18" stroke="#5eead4" stroke-opacity="0.3" stroke-width="2"/>
+  <rect x="8" y="8" width="96" height="156" rx="4" fill="url(#screen)"/>
+  <text x="16" y="24" font-family="monospace" font-size="7" fill="#93c5fd" opacity=".8">METRICS</text>
+  <polyline points="16,80 32,60 48,68 64,40 80,52 96,30" fill="none" stroke="#5eead4" stroke-width="1.6" opacity=".85"/>
+  <circle cx="96" cy="30" r="2.4" fill="#a7f3ec"/>
+  <g fill="#8fb8ba">
+    <rect x="16" y="100" width="70" height="4" rx="2" opacity=".5"/>
+    <rect x="16" y="110" width="50" height="4" rx="2" opacity=".4"/>
+    <rect x="16" y="120" width="60" height="4" rx="2" opacity=".45"/>
+  </g>
+  <rect x="16" y="136" width="80" height="18" rx="4" fill="#0c2126" stroke="#3a6a6f" stroke-width="1"/>
+  <text x="24" y="148" font-family="monospace" font-size="7" fill="#4ade80">latency ok</text>
+  <rect x="46" y="172" width="20" height="10" fill="#1c2740"/>
+</g>
 
-  <!-- floating mini agent bots -->
-  <g transform="translate(250,190)">
-    <rect x="0" y="0" width="26" height="22" rx="6" fill="#1e293b" stroke="#5eead4" stroke-width="1.4"/>
-    <circle cx="8" cy="10" r="2.2" fill="#5eead4"/>
-    <circle cx="18" cy="10" r="2.2" fill="#5eead4"/>
-    <line x1="13" y1="0" x2="13" y2="-8" stroke="#5eead4" stroke-width="1.4"/>
-    <circle cx="13" cy="-10" r="2.4" fill="#5eead4"/>
-  </g>
-  <g transform="translate(600,190) scale(0.85)">
-    <rect x="0" y="0" width="26" height="22" rx="6" fill="#1e293b" stroke="#93c5fd" stroke-width="1.4"/>
-    <circle cx="8" cy="10" r="2.2" fill="#93c5fd"/>
-    <circle cx="18" cy="10" r="2.2" fill="#93c5fd"/>
-    <line x1="13" y1="0" x2="13" y2="-8" stroke="#93c5fd" stroke-width="1.4"/>
-    <circle cx="13" cy="-10" r="2.4" fill="#93c5fd"/>
-  </g>
-  <g transform="translate(560,215) scale(0.7)">
-    <rect x="0" y="0" width="26" height="22" rx="6" fill="#1e293b" stroke="#f0abfc" stroke-width="1.4"/>
-    <circle cx="8" cy="10" r="2.2" fill="#f0abfc"/>
-    <circle cx="18" cy="10" r="2.2" fill="#f0abfc"/>
-    <line x1="13" y1="0" x2="13" y2="-8" stroke="#f0abfc" stroke-width="1.4"/>
-    <circle cx="13" cy="-10" r="2.4" fill="#f0abfc"/>
-  </g>
+<g transform="translate(860,432)">
+  <rect x="0" y="0" width="26" height="22" rx="6" fill="#1e293b" stroke="#5eead4" stroke-width="1.4"/>
+  <circle cx="8" cy="10" r="2.2" fill="#5eead4"/><circle cx="18" cy="10" r="2.2" fill="#5eead4"/>
+  <line x1="13" y1="0" x2="13" y2="-8" stroke="#5eead4" stroke-width="1.4"/><circle cx="13" cy="-10" r="2.4" fill="#5eead4"/>
+</g>
 
-  <!-- person, seated, back to viewer -->
-  <g transform="translate(428,470)">
-    <ellipse cx="0" cy="86" rx="66" ry="12" fill="#000000" opacity="0.25"/>
-    <!-- chair -->
-    <rect x="-46" y="-6" width="92" height="14" rx="7" fill="#182238"/>
-    <rect x="-40" y="6" width="10" height="60" fill="#182238"/>
-    <rect x="30" y="6" width="10" height="60" fill="#182238"/>
-    <path d="M-40 -6 C -46 -70 46 -70 40 -6 Z" fill="#20304f"/>
-    <!-- body -->
-    <path d="M-36 4 C -36 -46 36 -46 36 4 L 30 46 L -30 46 Z" fill="#24324f"/>
-    <path d="M-36 4 C -36 -30 -44 -6 -46 20 L -34 26 Z" fill="#1c2840"/>
-    <path d="M36 4 C 36 -30 44 -6 46 20 L 34 26 Z" fill="#1c2840"/>
-    <!-- head -->
-    <circle cx="0" cy="-58" r="22" fill="#2c2013"/>
-    <path d="M-22 -58 a22 22 0 0 1 44 0 C 18 -74 -18 -74 -22 -58Z" fill="#150f08"/>
-    <rect x="-9" y="-40" width="18" height="10" fill="#3a2c1e"/>
-  </g>
+<rect x="560" y="466" width="130" height="10" rx="3" fill="#0a1220"/>
+<g fill="#5eead4" opacity="0.5">
+  <rect x="566" y="468.5" width="4" height="4"/><rect x="576" y="468.5" width="4" height="4"/><rect x="586" y="468.5" width="4" height="4"/>
+  <rect x="596" y="468.5" width="4" height="4"/><rect x="606" y="468.5" width="4" height="4"/><rect x="616" y="468.5" width="4" height="4"/>
+  <rect x="626" y="468.5" width="4" height="4"/><rect x="636" y="468.5" width="4" height="4"/>
+</g>
+<rect x="704" y="465" width="20" height="14" rx="6" fill="#111827" stroke="#2c3760" stroke-width="1"/>
+<g transform="translate(500,458)">
+  <rect x="0" y="0" width="42" height="6" fill="#1b2440"/>
+  <rect x="2" y="-5" width="38" height="6" fill="#222c4d"/>
+</g>
 
-  <!-- keyboard glow line -->
-  <rect x="380" y="418" width="96" height="8" rx="3" fill="#0a1220"/>
-  <g fill="#5eead4" opacity="0.5">
-    <rect x="385" y="420" width="4" height="4"/><rect x="393" y="420" width="4" height="4"/><rect x="401" y="420" width="4" height="4"/>
-    <rect x="409" y="420" width="4" height="4"/><rect x="417" y="420" width="4" height="4"/><rect x="425" y="420" width="4" height="4"/>
-  </g>
+<g transform="translate(340,442)">
+  <path class="steam" d="M4 -4 q4 -6 0 -12" fill="none" stroke="#cbd5e1" stroke-width="1.4" stroke-linecap="round" opacity="0"/>
+  <path class="steam" d="M10 -4 q4 -6 0 -12" fill="none" stroke="#cbd5e1" stroke-width="1.4" stroke-linecap="round" opacity="0" style="animation-delay:1s"/>
+  <path class="steam" d="M16 -4 q4 -6 0 -12" fill="none" stroke="#cbd5e1" stroke-width="1.4" stroke-linecap="round" opacity="0" style="animation-delay:2s"/>
+  <rect x="0" y="0" width="20" height="18" rx="3" fill="#f1f5f9"/>
+  <path d="M20 4 h6 a5 5 0 0 1 0 10 h-6 Z" fill="none" stroke="#f1f5f9" stroke-width="3"/>
+</g>
 
-  <!-- mug -->
-  <g transform="translate(300,398)">
-    <rect x="0" y="0" width="20" height="18" rx="3" fill="#f1f5f9"/>
-    <path d="M20 4 h6 a5 5 0 0 1 0 10 h-6 Z" fill="none" stroke="#f1f5f9" stroke-width="3"/>
-  </g>
+<g transform="translate(650,545)">
+  <ellipse cx="0" cy="80" rx="62" ry="11" fill="#000000" opacity="0.25"/>
+  <rect x="-44" y="-6" width="88" height="13" rx="6.5" fill="#182238"/>
+  <rect x="-38" y="5" width="9" height="55" fill="#182238"/>
+  <rect x="29" y="5" width="9" height="55" fill="#182238"/>
+  <path d="M-38 -6 C -44 -66 44 -66 38 -6 Z" fill="#20304f"/>
+  <path d="M-34 4 C -34 -42 34 -42 34 4 L 28 42 L -28 42 Z" fill="#24324f"/>
+  <path d="M-34 4 C -34 -28 -42 -6 -44 18 L -32 24 Z" fill="#1c2840"/>
+  <path d="M34 4 C 34 -28 42 -6 44 18 L 32 24 Z" fill="#1c2840"/>
+  <circle cx="0" cy="-54" r="20" fill="#2c2013"/>
+  <path d="M-20 -54 a20 20 0 0 1 40 0 C 16 -68 -16 -68 -20 -54Z" fill="#150f08"/>
+  <rect x="-8" y="-37" width="16" height="9" fill="#3a2c1e"/>
+</g>
 </svg>
