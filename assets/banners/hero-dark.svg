@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="1000" height="300" role="img" aria-labelledby="t d">
 <title id="t">Sai Vardhan Reddy Kasula, Full Stack AI Engineer</title>
-<desc id="d">Profile banner. On the right, a colorful diagram shows a Java API passing requests to an agent, which branches out to an LLM, tools and data.</desc>
+<desc id="d">Profile banner. On the right, a colorful diagram shows a Java API passing requests to an agent, which branches out to an LLM, a RAG retrieval store, tools and data.</desc>
 <defs>
 <linearGradient id="bg" x1="0" y1="0" x2="1000" y2="300" gradientUnits="userSpaceOnUse">
 <stop offset="0%" stop-color="#0B0F1E"/>
@@ -27,6 +27,10 @@
 <linearGradient id="lineD" x1="0" y1="0" x2="0" y2="1">
 <stop offset="0%" stop-color="#A78BFA"/>
 <stop offset="100%" stop-color="#34D399"/>
+</linearGradient>
+<linearGradient id="lineE" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#A78BFA"/>
+<stop offset="100%" stop-color="#FB923C"/>
 </linearGradient>
 <pattern id="grid" width="22" height="22" patternUnits="userSpaceOnUse">
 <circle cx="1.5" cy="1.5" r="1" fill="#8B9BC7" opacity="0.16"/>
@@ -73,48 +77,47 @@
 <text x="357" y="251.5" fill="#F9A8D4">Modernization</text>
 </g>
 
-<!-- right: colorful architecture panel (old fan-out layout, new colors, live flow) -->
+<!-- right: colorful architecture panel (fan-out layout, live flow, now with RAG) -->
 <rect x="606" y="42" width="358" height="216" rx="16" fill="#0F1530" fill-opacity="0.7" stroke="#33406B"/>
 <text x="628" y="70" class="mono" font-size="11.5" fill="#8B9BC7" letter-spacing="0.5">REQUEST FLOW</text>
 
 <g clip-path="url(#panel)">
-<!-- connecting lines -->
-<path d="M732 153 H752" stroke="url(#lineA)" stroke-width="2" fill="none"/>
-<path d="M752 153 l-6 -4 v8 z" fill="#A78BFA"/>
+<path d="M732 157 H752" stroke="url(#lineA)" stroke-width="2" fill="none"/>
+<path d="M752 157 l-6 -4 v8 z" fill="#A78BFA"/>
 
-<path d="M856 153 C866 153 866 100 876 100" stroke="url(#lineB)" stroke-width="1.8" fill="none"/>
-<path d="M856 153 H876" stroke="url(#lineC)" stroke-width="1.8" fill="none"/>
-<path d="M856 153 C866 153 866 206 876 206" stroke="url(#lineD)" stroke-width="1.8" fill="none"/>
+<path d="M856 157 C866 157 866 91 876 91" stroke="url(#lineB)" stroke-width="1.8" fill="none"/>
+<path d="M856 157 C866 157 866 135 876 135" stroke="url(#lineE)" stroke-width="1.8" fill="none"/>
+<path d="M856 157 C866 157 866 179 876 179" stroke="url(#lineC)" stroke-width="1.8" fill="none"/>
+<path d="M856 157 C866 157 866 223 876 223" stroke="url(#lineD)" stroke-width="1.8" fill="none"/>
 
-<!-- Java API node -->
-<rect x="628" y="133" width="104" height="40" rx="10" fill="#1E293B" stroke="#60A5FA" stroke-width="1.4"/>
-<circle cx="644" cy="153" r="4" fill="#60A5FA"/>
-<text x="656" y="157" class="mono" font-size="12.5" fill="#93C5FD">Java API</text>
+<rect x="628" y="137" width="104" height="40" rx="10" fill="#1E293B" stroke="#60A5FA" stroke-width="1.4"/>
+<circle cx="644" cy="157" r="4" fill="#60A5FA"/>
+<text x="656" y="161" class="mono" font-size="12.5" fill="#93C5FD">Java API</text>
 
-<!-- Agent node -->
-<rect x="752" y="133" width="104" height="40" rx="10" fill="#1E293B" stroke="#A78BFA" stroke-width="1.4"/>
-<circle cx="768" cy="153" r="4" fill="#A78BFA"/>
-<text x="780" y="157" class="mono" font-size="12.5" fill="#C4B5FD">Agent</text>
+<rect x="752" y="137" width="104" height="40" rx="10" fill="#1E293B" stroke="#A78BFA" stroke-width="1.4"/>
+<circle cx="768" cy="157" r="4" fill="#A78BFA"/>
+<text x="780" y="161" class="mono" font-size="12.5" fill="#C4B5FD">Agent</text>
 
-<!-- LLM node -->
-<rect x="876" y="80" width="70" height="40" rx="10" fill="#1E293B" stroke="#F472B6" stroke-width="1.4"/>
-<circle cx="890" cy="100" r="4" fill="#F472B6"/>
-<text x="902" y="104" class="mono" font-size="12.5" fill="#F9A8D4">LLM</text>
+<rect x="876" y="74" width="70" height="34" rx="9" fill="#1E293B" stroke="#F472B6" stroke-width="1.4"/>
+<circle cx="890" cy="91" r="3.6" fill="#F472B6"/>
+<text x="902" y="95" class="mono" font-size="12" fill="#F9A8D4">LLM</text>
 
-<!-- Tools node -->
-<rect x="876" y="133" width="70" height="40" rx="10" fill="#1E293B" stroke="#FBBF24" stroke-width="1.4"/>
-<circle cx="890" cy="153" r="4" fill="#FBBF24"/>
-<text x="902" y="157" class="mono" font-size="12.5" fill="#FDE68A">Tools</text>
+<rect x="876" y="118" width="70" height="34" rx="9" fill="#1E293B" stroke="#FB923C" stroke-width="1.4"/>
+<circle cx="890" cy="135" r="3.6" fill="#FB923C"/>
+<text x="902" y="139" class="mono" font-size="12" fill="#FDBA74">RAG</text>
 
-<!-- Data node -->
-<rect x="876" y="186" width="70" height="40" rx="10" fill="#1E293B" stroke="#34D399" stroke-width="1.4"/>
-<circle cx="890" cy="206" r="4" fill="#34D399"/>
-<text x="902" y="210" class="mono" font-size="12.5" fill="#6EE7B7">Data</text>
+<rect x="876" y="162" width="70" height="34" rx="9" fill="#1E293B" stroke="#FBBF24" stroke-width="1.4"/>
+<circle cx="890" cy="179" r="3.6" fill="#FBBF24"/>
+<text x="902" y="183" class="mono" font-size="12" fill="#FDE68A">Tools</text>
 
-<!-- live flow: a request travelling API -> agent -> tools -->
-<circle r="3.4" fill="#60A5FA"><animateMotion dur="1.6s" repeatCount="indefinite" path="M732 153 H752"/></circle>
-<circle r="3.4" fill="#A78BFA"><animateMotion dur="1.6s" begin="0.8s" repeatCount="indefinite" path="M856 153 C866 153 866 100 876 100"/></circle>
-<circle r="3.4" fill="#A78BFA"><animateMotion dur="1.6s" begin="0.8s" repeatCount="indefinite" path="M856 153 H876"/></circle>
-<circle r="3.4" fill="#A78BFA"><animateMotion dur="1.6s" begin="0.8s" repeatCount="indefinite" path="M856 153 C866 153 866 206 876 206"/></circle>
+<rect x="876" y="206" width="70" height="34" rx="9" fill="#1E293B" stroke="#34D399" stroke-width="1.4"/>
+<circle cx="890" cy="223" r="3.6" fill="#34D399"/>
+<text x="902" y="227" class="mono" font-size="12" fill="#6EE7B7">Data</text>
+
+<circle r="3.2" fill="#60A5FA"><animateMotion dur="1.6s" repeatCount="indefinite" path="M732 157 H752"/></circle>
+<circle r="3.2" fill="#A78BFA"><animateMotion dur="1.6s" begin="0.8s" repeatCount="indefinite" path="M856 157 C866 157 866 91 876 91"/></circle>
+<circle r="3.2" fill="#A78BFA"><animateMotion dur="1.6s" begin="0.8s" repeatCount="indefinite" path="M856 157 C866 157 866 135 876 135"/></circle>
+<circle r="3.2" fill="#A78BFA"><animateMotion dur="1.6s" begin="0.8s" repeatCount="indefinite" path="M856 157 C866 157 866 179 876 179"/></circle>
+<circle r="3.2" fill="#A78BFA"><animateMotion dur="1.6s" begin="0.8s" repeatCount="indefinite" path="M856 157 C866 157 866 223 876 223"/></circle>
 </g>
 </svg>
