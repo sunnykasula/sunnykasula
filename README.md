@@ -10,7 +10,7 @@
 
 ## Hi, I'm Sai Vardhan 👋
 
-I started as a Java full-stack engineer and now spend most of my time putting AI into real applications: chatbots, agents, and the integrations that connect them to the systems people already use. I also help modernize existing apps, which is less flashy and usually more useful.
+I started as a Java full-stack engineer and now spend most of my time putting AI into real applications: chatbots, agents and the integrations that connect them to the systems people already use. I also help modernize existing apps, which is less flashy and usually more useful.
 
 | 🧰 Day to day | 🏅 Certified | 💬 Ask me about |
 | --- | --- | --- |
