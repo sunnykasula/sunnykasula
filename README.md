@@ -74,14 +74,9 @@ I started as a Java full-stack engineer and now spend most of my time putting AI
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=sunnykasula&show_icons=true&hide_border=true&hide_title=true&theme=tokyonight&bg_color=0D1420&title_color=F5A524&icon_color=2DD4BF">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=sunnykasula&show_icons=true&hide_border=true&hide_title=true&theme=default&title_color=B45309&icon_color=0F766E">
-  <img alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=sunnykasula&show_icons=true&hide_border=true&hide_title=true&theme=tokyonight&bg_color=0D1420&title_color=F5A524&icon_color=2DD4BF" height="160">
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=sunnykasula&layout=compact&hide_border=true&langs_count=8&theme=tokyonight&bg_color=0D1420&title_color=F5A524">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=sunnykasula&layout=compact&hide_border=true&langs_count=8&theme=default&title_color=B45309">
-  <img alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sunnykasula&layout=compact&hide_border=true&langs_count=8&theme=tokyonight&bg_color=0D1420&title_color=F5A524" height="160">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/languages-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/languages-light.svg">
+  <img alt="Languages across my repos" src="assets/languages-dark.svg" width="100%">
 </picture>
 
 <sub>Tests pass. Logs are quiet. Ship it.</sub>
