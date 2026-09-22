@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1222"/>
+      <stop offset="55%" stop-color="#121a33"/>
+      <stop offset="100%" stop-color="#171f3d"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a2140"/>
+      <stop offset="100%" stop-color="#10152a"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e2f3a"/>
+      <stop offset="100%" stop-color="#0a1a2c"/>
+    </linearGradient>
+    <linearGradient id="deskTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a2c22"/>
+      <stop offset="100%" stop-color="#2b2018"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#5eead4" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#5eead4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="moon" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fef3c7" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#fef3c7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="900" height="560" fill="url(#sky)"/>
+
+  <circle cx="770" cy="90" r="60" fill="url(#moon)"/>
+  <circle cx="770" cy="90" r="22" fill="#fef9e7" opacity="0.85"/>
+
+  <g opacity="0.7">
+    <circle cx="120" cy="70" r="1.6" fill="#cbd5e1"/>
+    <circle cx="200" cy="110" r="1.3" fill="#cbd5e1"/>
+    <circle cx="300" cy="55" r="1.8" fill="#cbd5e1"/>
+    <circle cx="60" cy="150" r="1.2" fill="#cbd5e1"/>
+    <circle cx="400" cy="80" r="1.4" fill="#cbd5e1"/>
+    <circle cx="500" cy="45" r="1.3" fill="#cbd5e1"/>
+    <circle cx="650" cy="130" r="1.4" fill="#cbd5e1"/>
+    <circle cx="850" cy="60" r="1.5" fill="#cbd5e1"/>
+  </g>
+
+  <!-- city skyline -->
+  <g opacity="0.85">
+    <rect x="0" y="230" width="55" height="160" fill="#0d1326"/>
+    <rect x="60" y="190" width="40" height="200" fill="#101733"/>
+    <rect x="105" y="250" width="60" height="140" fill="#0d1326"/>
+    <rect x="720" y="210" width="45" height="180" fill="#101733"/>
+    <rect x="770" y="245" width="55" height="145" fill="#0d1326"/>
+    <rect x="830" y="200" width="50" height="190" fill="#101733"/>
+    <!-- windows -->
+    <g fill="#5eead4" opacity="0.55">
+      <rect x="10" y="245" width="6" height="8"/><rect x="24" y="245" width="6" height="8"/><rect x="38" y="245" width="6" height="8"/>
+      <rect x="10" y="265" width="6" height="8"/><rect x="38" y="265" width="6" height="8"/>
+      <rect x="10" y="300" width="6" height="8"/><rect x="24" y="300" width="6" height="8"/>
+      <rect x="70" y="210" width="6" height="8"/><rect x="84" y="210" width="6" height="8"/>
+      <rect x="70" y="235" width="6" height="8"/><rect x="84" y="235" width="6" height="8"/>
+      <rect x="735" y="230" width="6" height="8"/><rect x="748" y="230" width="6" height="8"/>
+      <rect x="840" y="220" width="6" height="8"/><rect x="854" y="220" width="6" height="8"/>
+      <rect x="840" y="245" width="6" height="8"/><rect x="854" y="245" width="6" height="8"/>
+    </g>
+  </g>
+
+  <!-- room floor -->
+  <rect x="0" y="390" width="900" height="170" fill="url(#floor)"/>
+  <rect x="0" y="388" width="900" height="4" fill="#5eead4" opacity="0.25"/>
+
+  <!-- window frame behind desk -->
+  <rect x="30" y="60" width="840" height="330" fill="none"/>
+
+  <!-- plant left -->
+  <g transform="translate(70,330)">
+    <rect x="-18" y="40" width="36" height="34" rx="4" fill="#22304f"/>
+    <path d="M0 40 C -22 20 -26 -10 -8 -28 C -4 -6 0 10 0 40" fill="#2f9e6e"/>
+    <path d="M0 40 C 20 24 26 -4 10 -24 C 6 -4 2 10 0 40" fill="#38b57f"/>
+    <path d="M0 40 C -6 14 -2 -8 2 -30 C 8 -10 6 14 0 40" fill="#4ecb92"/>
+  </g>
+
+  <!-- desk -->
+  <rect x="210" y="405" width="480" height="18" rx="4" fill="url(#deskTop)"/>
+  <rect x="230" y="423" width="14" height="85" fill="#22180f"/>
+  <rect x="646" y="423" width="14" height="85" fill="#22180f"/>
+
+  <!-- monitor arm + main screen -->
+  <rect x="418" y="392" width="10" height="18" fill="#1c2740"/>
+  <g>
+    <rect x="330" y="235" width="196" height="158" rx="10" fill="#060c18" stroke="#5eead4" stroke-opacity="0.4" stroke-width="2"/>
+    <rect x="342" y="247" width="172" height="134" rx="4" fill="url(#screen)"/>
+    <circle cx="810" cy="0" r="0"/>
+    <!-- agent graph on screen -->
+    <g stroke="#5eead4" stroke-width="1.4" opacity="0.85">
+      <line x1="375" y1="270" x2="420" y2="300"/>
+      <line x1="420" y1="300" x2="470" y2="270"/>
+      <line x1="420" y1="300" x2="410" y2="345"/>
+      <line x1="410" y1="345" x2="465" y2="360"/>
+      <line x1="420" y1="300" x2="480" y2="330"/>
+    </g>
+    <g fill="#5eead4">
+      <circle cx="375" cy="270" r="5"/>
+      <circle cx="420" cy="300" r="7"/>
+      <circle cx="470" cy="270" r="5"/>
+      <circle cx="410" cy="345" r="5"/>
+      <circle cx="465" cy="360" r="4.5"/>
+      <circle cx="480" cy="330" r="4.5"/>
+    </g>
+    <g fill="#93c5fd" opacity="0.9">
+      <rect x="352" y="256" width="46" height="4" rx="2"/>
+      <rect x="352" y="265" width="30" height="4" rx="2"/>
+    </g>
+  </g>
+  <rect x="313" y="393" width="230" height="8" rx="3" fill="#0a1220"/>
+
+  <!-- second small monitor, right, chat/agent panel -->
+  <g transform="translate(552,270)">
+    <rect x="0" y="0" width="120" height="100" rx="8" fill="#060c18" stroke="#5eead4" stroke-opacity="0.3" stroke-width="2"/>
+    <rect x="10" y="10" width="100" height="80" rx="4" fill="url(#screen)"/>
+    <rect x="18" y="20" width="55" height="10" rx="5" fill="#1c3a3e"/>
+    <rect x="47" y="36" width="55" height="10" rx="5" fill="#134e4a" opacity="0.9"/>
+    <rect x="18" y="52" width="40" height="10" rx="5" fill="#1c3a3e"/>
+    <circle cx="90" cy="68" r="9" fill="#5eead4" opacity="0.85"/>
+    <rect x="45" y="100" width="30" height="8" fill="#0a1220"/>
+  </g>
+
+  <!-- glow behind main screen -->
+  <circle cx="428" cy="310" r="150" fill="url(#glow)"/>
+
+  <!-- floating mini agent bots -->
+  <g transform="translate(250,190)">
+    <rect x="0" y="0" width="26" height="22" rx="6" fill="#1e293b" stroke="#5eead4" stroke-width="1.4"/>
+    <circle cx="8" cy="10" r="2.2" fill="#5eead4"/>
+    <circle cx="18" cy="10" r="2.2" fill="#5eead4"/>
+    <line x1="13" y1="0" x2="13" y2="-8" stroke="#5eead4" stroke-width="1.4"/>
+    <circle cx="13" cy="-10" r="2.4" fill="#5eead4"/>
+  </g>
+  <g transform="translate(600,190) scale(0.85)">
+    <rect x="0" y="0" width="26" height="22" rx="6" fill="#1e293b" stroke="#93c5fd" stroke-width="1.4"/>
+    <circle cx="8" cy="10" r="2.2" fill="#93c5fd"/>
+    <circle cx="18" cy="10" r="2.2" fill="#93c5fd"/>
+    <line x1="13" y1="0" x2="13" y2="-8" stroke="#93c5fd" stroke-width="1.4"/>
+    <circle cx="13" cy="-10" r="2.4" fill="#93c5fd"/>
+  </g>
+  <g transform="translate(560,215) scale(0.7)">
+    <rect x="0" y="0" width="26" height="22" rx="6" fill="#1e293b" stroke="#f0abfc" stroke-width="1.4"/>
+    <circle cx="8" cy="10" r="2.2" fill="#f0abfc"/>
+    <circle cx="18" cy="10" r="2.2" fill="#f0abfc"/>
+    <line x1="13" y1="0" x2="13" y2="-8" stroke="#f0abfc" stroke-width="1.4"/>
+    <circle cx="13" cy="-10" r="2.4" fill="#f0abfc"/>
+  </g>
+
+  <!-- person, seated, back to viewer -->
+  <g transform="translate(428,470)">
+    <ellipse cx="0" cy="86" rx="66" ry="12" fill="#000000" opacity="0.25"/>
+    <!-- chair -->
+    <rect x="-46" y="-6" width="92" height="14" rx="7" fill="#182238"/>
+    <rect x="-40" y="6" width="10" height="60" fill="#182238"/>
+    <rect x="30" y="6" width="10" height="60" fill="#182238"/>
+    <path d="M-40 -6 C -46 -70 46 -70 40 -6 Z" fill="#20304f"/>
+    <!-- body -->
+    <path d="M-36 4 C -36 -46 36 -46 36 4 L 30 46 L -30 46 Z" fill="#24324f"/>
+    <path d="M-36 4 C -36 -30 -44 -6 -46 20 L -34 26 Z" fill="#1c2840"/>
+    <path d="M36 4 C 36 -30 44 -6 46 20 L 34 26 Z" fill="#1c2840"/>
+    <!-- head -->
+    <circle cx="0" cy="-58" r="22" fill="#2c2013"/>
+    <path d="M-22 -58 a22 22 0 0 1 44 0 C 18 -74 -18 -74 -22 -58Z" fill="#150f08"/>
+    <rect x="-9" y="-40" width="18" height="10" fill="#3a2c1e"/>
+  </g>
+
+  <!-- keyboard glow line -->
+  <rect x="380" y="418" width="96" height="8" rx="3" fill="#0a1220"/>
+  <g fill="#5eead4" opacity="0.5">
+    <rect x="385" y="420" width="4" height="4"/><rect x="393" y="420" width="4" height="4"/><rect x="401" y="420" width="4" height="4"/>
+    <rect x="409" y="420" width="4" height="4"/><rect x="417" y="420" width="4" height="4"/><rect x="425" y="420" width="4" height="4"/>
+  </g>
+
+  <!-- mug -->
+  <g transform="translate(300,398)">
+    <rect x="0" y="0" width="20" height="18" rx="3" fill="#f1f5f9"/>
+    <path d="M20 4 h6 a5 5 0 0 1 0 10 h-6 Z" fill="none" stroke="#f1f5f9" stroke-width="3"/>
+  </g>
+</svg>
