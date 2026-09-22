@@ -13,8 +13,12 @@
 I started as a Java full-stack engineer and now spend most of my time putting AI into real applications: chatbots, agents and the integrations that connect them to the systems people already use. I also help modernize existing apps, which is less flashy and usually more useful.
 
 <div align="center">
-<img src="assets/illustrations/agent-desk-dark.svg" width="100%" alt="Illustration of Sai at a desk at night, dual monitors showing a RAG/agent workflow graph">
-<br><sub>RAG retrieval feeding an agent that talks to the Java services behind it.</sub>
+<img src="assets/illustrations/agent-desk-dark.svg" width="100%" alt="Pixel-art illustration of Sai at his desk at night: back turned, headphones on, an ultrawide monitor glowing in the dark, city skyline through the window, a PC tower with pink RGB fans, a bonsai plant and a lava lamp">
+<br><sub>Another late one — headphones on, RGB humming, one more service to ship before bed.</sub>
+
+<br><br>
+
+<img src="assets/illustrations/stack-icons-dark.svg" width="100%" alt="Icon grid of the tools and technologies Sai works with: Java, Spring Boot, React, PostgreSQL, Python, LangChain, LangGraph, RAG, Anthropic, PyTorch, Databricks, Jupyter, AWS, Google Cloud, Docker and Git">
 </div>
 
 | 🧰 Day to day | 🏅 Certified | 💬 Ask me about |
