@@ -12,6 +12,11 @@
 
 I started as a Java full-stack engineer and now spend most of my time putting AI into real applications: chatbots, agents and the integrations that connect them to the systems people already use. I also help modernize existing apps, which is less flashy and usually more useful.
 
+<div align="center">
+<img src="assets/illustrations/agent-desk-dark.svg" width="100%" alt="Illustration of Sai at a desk at night, dual monitors showing a RAG/agent workflow graph">
+<br><sub>RAG retrieval feeding an agent that talks to the Java services behind it.</sub>
+</div>
+
 | 🧰 Day to day | 🏅 Certified | 💬 Ask me about |
 | --- | --- | --- |
 | Full-stack apps<br>AI chatbots and agents<br>Application modernization | AWS Machine Learning Engineer – Associate<br>Databricks Generative AI Engineer Associate | Java and AI integrations<br>Agents inside enterprise apps |
@@ -22,7 +27,7 @@ I started as a Java full-stack engineer and now spend most of my time putting AI
 
 | Backend and full-stack | AI and data | Cloud and tooling |
 | --- | --- | --- |
-| ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white) | ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white) ![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white) | ![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white) ![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) |
+| ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white) | ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white) ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge) ![RAG](https://img.shields.io/badge/RAG-14B8A6?style=for-the-badge) ![Anthropic](https://img.shields.io/badge/Anthropic-D97757?style=for-the-badge&logo=anthropic&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white) ![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white) | ![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white) ![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) |
 
 <img src="assets/dividers/divider-dark.svg" width="100%">
 
@@ -31,6 +36,19 @@ I started as a Java full-stack engineer and now spend most of my time putting AI
 | 🧪 Prompt engineering | ☁️ Cloud |
 | --- | --- |
 | **[genai-sdlc-lab](https://github.com/sunnykasula/genai-sdlc-lab)**<br>Notebooks covering zero-shot, few-shot, chain-of-thought and self-consistency prompting, plus reusable prompt templates.<br>![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white) ![Prompting](https://img.shields.io/badge/prompting-A78BFA?style=for-the-badge) | **[gcpcndproject](https://github.com/sunnykasula/gcpcndproject)**<br>A Python web app packaged with Docker for deployment on Google Cloud.<br>![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white) |
+
+<img src="assets/dividers/divider-dark.svg" width="100%">
+
+## Where I've worked
+
+| | | |
+| --- | --- | --- |
+| **Nationwide Insurance** | Full Stack AI Engineer | Sep 2025 – Present |
+| **Inspire Brands** (via S2 IT Group) | Software Developer | Jan 2024 – Sep 2025 |
+| **Accenture** | Full Stack Engineer | Jun 2022 – Jul 2023 |
+| **Tata Consultancy Services** | Software Engineer | Sep 2021 – Jun 2022 |
+
+<sub>Currently: breaking a monolithic insurance platform into Spring Boot microservices while wiring RAG-based retrieval into it.</sub>
 
 <img src="assets/dividers/divider-dark.svg" width="100%">
 
