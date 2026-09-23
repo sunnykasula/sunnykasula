@@ -36,19 +36,6 @@ I started as a Java full-stack engineer and now spend most of my time putting AI
 
 <img src="assets/dividers/divider-dark.svg" width="100%">
 
-## Where I've worked
-
-| | | |
-| --- | --- | --- |
-| **Nationwide Insurance** | Full Stack AI Engineer | Sep 2025 – Present |
-| **Inspire Brands** (via S2 IT Group) | Software Developer | Jan 2024 – Sep 2025 |
-| **Accenture** | Full Stack Engineer | Jun 2022 – Jul 2023 |
-| **Tata Consultancy Services** | Software Engineer | Sep 2021 – Jun 2022 |
-
-<sub>Currently: breaking a monolithic insurance platform into Spring Boot microservices while wiring RAG-based retrieval into it.</sub>
-
-<img src="assets/dividers/divider-dark.svg" width="100%">
-
 ## Certifications
 
 <a href="https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/"><img alt="AWS Certified Machine Learning Engineer Associate" src="https://img.shields.io/badge/AWS_Certified-Machine_Learning_Engineer_Associate-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white"></a>
